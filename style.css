@@ -1,0 +1,130 @@
+/* GLOBAL */
+body {
+    background-color: #0e0f11;
+    color: #eaeaea;
+    font-family: "Poppins", sans-serif;
+}
+
+/* TITLES */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #00c8ff;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #151719;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00c8ff;
+}
+
+/* TECH STACK BADGES */
+.tech-badge {
+    background: #1a1d20;
+    border: 1px solid #2b2f33;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 0.85rem;
+}
+
+/* CARD GENERAL */
+.card {
+    background-color: #1a1d20;
+    border: 1px solid #2b2f33;
+    border-radius: 10px;
+    padding: 15px;
+    color: #eaeaea;
+}
+
+/* PROJECTS — IMPROVED READABILITY */
+#projects .card {
+    background-color: #181a1f;
+    border: 1px solid #2b2f33;
+}
+
+#projects .card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#projects .card p {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    line-height: 1.4;
+}
+
+/* CERTIFICATES */
+#certificates .card p {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #eaeaea;
+}
+
+#certificates img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* OPTIONAL HOVER EFFECT */
+.card:hover {
+    border-color: #00c8ff;
+    transition: 0.2s ease-in-out;
+}
+
+.zoom-img {
+    cursor: zoom-in;
+    transition: 0.2s ease;
+    border-radius: 8px;
+}
+
+.zoom-img:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* Modern Note Box */
+.note-box {
+    background: #14161a;
+    border: 1px solid #24272b;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 12px rgba(0, 200, 255, 0.05);
+    transition: 0.2s ease;
+}
+
+.note-box:hover {
+    border-color: #00c8ff;
+    box-shadow: 0 0 18px rgba(0, 200, 255, 0.15);
+}
+
+.note-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #00c8ff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.note-box p {
+    margin: 0;
+    color: #d6d6d6;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

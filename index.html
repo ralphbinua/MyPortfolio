@@ -3,91 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/web.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Portfolio</title>
+    <title>Ralph Gabriel B. Binua | Portfolio</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="header">
-   <div class="navigation">
-    <nav>
-        <h1>DiAkoSiTags</h1>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Ralph Binua</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="#notes" class="nav-link">Notes</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header class="text-center py-5">
+    <img src="img/portfolio.jpeg" alt="Profile" class="profile-img mb-3">
+    <h1 class="fw-bold">Ralph Gabriel B. Binua</h1>
+    <p class="text-secondary">Aspiring Full-Stack Developer</p>
+
+    <div class="mt-3">
+        <a href="https://facebook.com/raprapbinua" class="btn btn-outline-info me-2"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/ralph.blnd" class="btn btn-outline-info me-2"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ralphbinua-4a08a6333" class="btn btn-outline-info me-2"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ralphbinua" class="btn btn-outline-info me-2"><i class="bi bi-github"></i></a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="container py-5">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I'm currently learning the MERN stack while continuously improving my skills in web development,
+        backend systems, and UI/UX. I enjoy building functional and visually appealing applications.
+    </p>
+
+    <h4 class="mt-4 text-info">Tech Stack</h4>
+    <div class="d-flex flex-wrap">
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">React Native</span>
+        <span class="tech-badge">PHP</span>
+        <span class="tech-badge">HTML5</span>
+        <span class="tech-badge">Firebase</span>
+        <span class="tech-badge">SQLite</span>
+        <span class="tech-badge">Express.js</span>
+        <span class="tech-badge">Git</span>
+        <span class="tech-badge">GitHub</span>
+        <span class="tech-badge">Postman</span>
+        <span class="tech-badge">Insomnia</span>
+        <span class="tech-badge">Figma</span>
+        <span class="tech-badge">Adobe Photoshop</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container py-5">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5 class="fw-bold">Rx Vendor Website</h5>
+                <p>A simple website project for Rx Vendor using HTML and CSS.</p>
+                <a href="https://ralphbinua.github.io/RxVendor_WebsiteProject/" class="btn btn-outline-info" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5 class="fw-bold">Pizza Shop System</h5>
+                <p>A system for a pizza shop created using NetBeans and PHP Admin.</p>
+                <a href="https://github.com/ralphbinua/Pizza-Shop-System" class="btn btn-outline-info" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5 class="fw-bold">Bus Reservation System</h5>
+                <p>A simple bus reservation project for ITEL1 using PHP and PHP Admin.</p>
+                <a href="https://github.com/ralphbinua/BusReservationSystem" class="btn btn-outline-info" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5 class="fw-bold">VendEra</h5>
+                <p>A project system for UNLAD Trading Center created using NetBeans and PHP Admin.</p>
+                <a href="https://github.com/ralphbinua/VendEra" class="btn btn-outline-info" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5 class="fw-bold">Student Information System</h5>
+                <p>A backend project for ITEL3 using MongoDB, Express, and Node.js.</p>
+                <a href="https://github.com/ralphbinua/student-information-system" class="btn btn-outline-info" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h5 class="fw-bold">Parking Management System</h5>
+                <p>A full-stack project using MongoDB, Express, React, and Node.js.</p>
+                <a href="https://github.com/ralphbinua/parking-management-system" class="btn btn-outline-info" target="_blank">View Project</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="container py-5">
+    <h2 class="section-title">Certificates</h2>
+    <p>My Certificates</p>
+
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <p>Computer Systems Servicing</p>
+                <img src="img/css.jpg" alt="Computer Systems Servicing" class="zoom-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <p>Visual Graphic Design</p>
+                <img src="img/vgd.jpg" alt="Visual Graphic Design" class="zoom-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- IMAGE ZOOM MODAL -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content" style="background: #0e0f11; border: none;">
+            <div class="modal-body p-0">
+                <img id="modalImage" src="" class="w-100" style="border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NOTES -->
+<section id="notes" class="container py-5">
+    <h2 class="section-title">Notes</h2>
+    <p>You can place personal notes, study logs, or development journal entries here.</p>
+
+    <!-- NOTE 1 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Introduction of Information Assurance and Security</span>
+        </div>
+        <p>August 8, 2025. We met our IAS professor, Prof. AJ Tapican. He introduced the CIA Triad, a basic model used in information security to protect important information.
+
+        • Confidentiality - Information must be accessed only by authorized people.
+        • Integrity - Information must stay accurate and trustworthy.
+        • Availability - Information must remain usable even during failures.</p>
+    </div>
+
+    <!-- NOTE 2 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Cybersecurity</span>
+        </div>
+        <p>August 29, 2025. We learned about cybersecurity. There are two main teams:
+
+        • Red Team - Offensive security that simulates cyberattacks.
+        • Blue Team - Defensive security that monitors and protects systems.
+
+        We also learned about penetration testing, which is used to confirm if a vulnerability is real by trying to exploit it.</p>
+    </div>
+
+    <!-- NOTE 3 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Encryption Fundamentals</span>
+        </div>
+        <p>September 12, 2025. We studied encryption fundamentals. Cryptography has four main principles:
+
+        1. Encryption (symmetric and asymmetric)
+        2. Authentication
+        3. Integrity
+        4. Non-repudiation
+
+        We also learned that hash functions produce a unique value for each piece of data.</p>
+    </div>
+
+    <!-- NOTE 4 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>OS Command Injection</span>
+        </div>
+        <p>September 19, 2025. We studied OS Command Injection, an attack where attackers try to execute system commands on a victim’s operating system.</p>
+    </div>
+
+    <!-- NOTE 5 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Cloud & Virtualization Fundamentals</span>
+        </div>
+        <p>September 19, 2025. We learned about cloud models:
+
+        • Public Cloud - Example: Google Drive, widely used and affordable.
+        • Private Cloud - Example: AWS GovCloud, used by one organization.
+        • Hybrid Cloud - Combination of private and public cloud.
+        • Community Cloud - Shared by organizations with similar needs.
+
+        We also learned about CASB (Cloud Access Security Brokers), which help monitor cloud usage. Examples: Forcepoint, BlueCoat, Skyhigh Security, CloudLock.</p>
+    </div>
+
+    <!-- NOTE 6 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Burp Suite</span>
+        </div>
+        <p>October 3, 2025. We learned how to use Burp Suite, a platform for web security testing used by professionals and bug hunters. Its main tools are Proxy, Repeater, Intruder, Scanner, and Sequencer.</p>
+    </div>
+
+    <!-- NOTE 7 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>SQL Injection</span>
+        </div>
+        <p>SQL Injection happens when software creates SQL queries using unsafe user input. This can lead to data breaches, data loss, denial of service, or full system compromise.</p>
+    </div>
+
+    <!-- NOTE 8 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Network Traffic Analysis</span>
+        </div>
+        <p>The OSI Model has 7 layers:</p>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>Layer 7 - Application: User services (HTTP, FTP)</li>
+            <li>Layer 6 - Presentation: Data formatting (SSL, TLS)</li>
+            <li>Layer 5 - Session: Manages connections</li>
+            <li>Layer 4 - Transport: Reliable data delivery (TCP, UDP)</li>
+            <li>Layer 3 - Network: Routing (IP)</li>
+            <li>Layer 2 - Data Link: Frame transmission (Ethernet)</li>
+            <li>Layer 1 - Physical: Hardware and signals</li>
         </ul>
-    </nav>
-   </div> 
-   <div class="bottom-nav">
-    <div class="intro-text">
-        <H1>Hello, I'm <span>Ralph Gabriel</span></H1>
-        <p>Your Future Programmer</p>
     </div>
 
-    <div>
-        <img class="logo" src="picture/logo.png" >
-    </div>
-   </div>
-    
-</div>
-
-
-<div id="about">
-    <div class="graybg">
-        <img src="picture/removebg.png">
-    </div>
-
-    <div class="info">
-        <div class="top-info">
-            <h1>About Me</h1>
-            <p>Hello, I’m Ralph Gabriel B. Binua. A Bachelor of Science in Information Technology Student.</p>
+    <!-- NOTE 9 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>Network Traffic Analysis Process</span>
         </div>
-        <div class="down-info">
-            <div class="skills">
-                <h4>Skills</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java</li>
-                    <li>Graphic Design</li>
-                    <li>Basic JavaScript</li>
-                </ul>
-            </div>
-            <div class="education">
-                    <h4>Education</h4>
-                    <ul>
-                        <li>Studying at New Era University</li>
-                        <li>Studied Graphic Design at SLDM College</li>
-                    </ul>
-            </div>
+        <p>The process of network traffic analysis includes:
+
+        1. Ingest Traffic - Capture the network traffic.
+        2. Reduce Noise - Filter unnecessary data.
+        3. Analyze and Explore - Study only important information.
+        4. Detect and Alert - Identify errors and decide if traffic is safe or harmful.</p>
+    </div>
+
+    <!-- NOTE 10 -->
+    <div class="note-box">
+        <div class="note-header">
+            <i class="bi bi-journal-text"></i>
+            <span>MERN Stack</span>
         </div>
+        <p>Prof. Tipay introduced the MERN tech stack and taught us how APIs work in the backend. After learning the basics, I watched YouTube tutorials and created small MERN projects. I now use MERN in our major subject projects to improve my skills.</p>
     </div>
-</div>
 
-<div id="portfolio">
-    <h1 class="project-header">My Projects</h1>
-    <div class="myProjects">
-        <div class="project-one">hello</div>
-        <div class="project-two">hello</div>
-        <div class="project-three" >hello</div>
-    </div>
-</div>
+</section>
 
-<div id="contact">
-    <div class="logo-email">
-        <img src="picture/whitebg.jpg" class="logo-pic">
-        <p>binua.ralphgabrielb@gmail.com</p>
-        <p>+639613052321</p>
-    </div>
-    <div class="social">
-        <a href="https://www.facebook.com/raprapbinua?mibextid=ZbWKwL" target="_blank">Facebook</a>
-        <a href="https://instagram.com/diakositags?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
-        <a href="www.linkedin.com/in/ralph-gabriel-binua-0125b02a4" target="_blank">LinkedIn</a>
-        <a href="https://discord.com/users/diakositags" target="_blank">Discord</a>
-        <a href="https://github.com/WreckItTags" target="_blank"> Github</a>
-    </div>
-</div>
+<!-- FOOTER -->
+<footer class="text-center py-4 text-secondary">
+    © 2025 ralphbinua.dev — All rights reserved.
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ZOOM SCRIPT -->
+<script>
+document.querySelectorAll(".zoom-img").forEach(img => {
+    img.addEventListener("click", function () {
+        document.getElementById("modalImage").src = this.src;
+    });
+});
+</script>
+
 </body>
 </html>
